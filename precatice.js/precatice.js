@@ -113,6 +113,18 @@ const calculator = (num1, num2, operator) => {
   }
 }
 
-console.log(calculator(12, 3, "+")); // 15
+//console.log(calculator(12, 3, "+")); // 15
 
 
+let arr = [ 13 ,56,3,23];
+ arr.sort();
+console.log(arr); //[ 13, 23, 3, 56 ]
+console.log(typeof(arr)); //object
+console.log(typeof(arr[2]));  // number
+
+/*
+.sort() → compare as strings
+❌ convert permanently nahi karta
+✅ sirf comparison ke waqt convert karta hai
+*/
+arr.sort((a, b) => a - b); // use this
