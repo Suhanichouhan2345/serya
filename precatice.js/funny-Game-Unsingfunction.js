@@ -65,4 +65,4 @@ let mood = () =>{
     if(mod == 5) return "Angry 😡";
     return "iske liye koi mood nhi outof boundary";
 }
-console.log(mood());
+//console.log(mood());
