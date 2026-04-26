@@ -1,0 +1,6 @@
+Ek function banao jo 2 numbers ka sum return kare
+function sum(x,y){
+    return x + y;
+}
+let value = sum(8,9);
+console.log(value);
