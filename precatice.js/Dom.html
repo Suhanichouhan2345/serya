@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .red{
+        color: red;
+    }
+</style>
+<body style="background-color:rgb(21, 12, 12) ;color: rgb(251, 244, 244);">
+    <h1  onclick="sc()">On</h1>
+    <script>
+    function sc (){
+        
+         let h1= document.querySelector("h1");
+            h1.classList.toggle("red");
+            if(h1.innerText=='on'){
+                h1.innerText ='off';
+            } else{
+                h1.innerText ='on';
+            }
+
+    }
+      
+    </script>
+</body>
+</html>
