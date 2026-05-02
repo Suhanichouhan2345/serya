@@ -1,6 +1,17 @@
-let red = document.querySelector("h1");
+/*
+let h1 = document.querySelector("h1");
 
-function changeColor(element) {
-    element.classList.add("red");
-}
+h1.addEventListener("dblclick",function(){// for double click
+    h1.style.color="red";
+});
+*/
+
+
+
+/*
+let inpute = document.querySelector("input");
+inpute.addEventListener("input", function(){
+    console.log("type");
+});
+*/
 
