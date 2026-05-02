@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+          padding: 30px;
+        }
+ input{
+    display: block;
+    margin: 10px;
+    padding: 5px;
+ }
+      
+ .cards{
+    min-width: 300px;
+    color: white;
+    margin-top: 40px;
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px 2px gray;
+    border-radius: 5px;
+ }
+ .profile{
+   
+    height: 50px;
+    width: 50px;
+    box-shadow: 1px 1px 1px 2px gray;
+    border-radius: 50%;
+      overflow: hidden;
+
+ }
+ .profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+    </style>
+</head>
+
+<body style="color:white;background: black;">
+
+    <form action="">
+        <input type="text" placeholder="name">
+        <input type="text" placeholder="age">
+        <input type="text" placeholder="email">
+        <input type="text" placeholder="number">
+        <input type="text" placeholder="proFile -pic">
+        <input type="submit">
+
+    </form>
+    <div class="cards">
+        <div class="profile">
+            <img src="https://images.pexels.com/photos/14960246/pexels-photo-14960246.jpeg?cs=srgb&dl=pexels-less-rock-14960246.jpg&fm=jpg">
+        </div>
+    </div>
+<script src="form.js"></script>
+</body>
+
+</html>

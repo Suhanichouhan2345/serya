@@ -6,8 +6,6 @@ h1.addEventListener("dblclick",function(){// for double click
 });
 */
 
-
-
 /*
 let inpute = document.querySelector("input");
 inpute.addEventListener("input", function(){
@@ -15,3 +13,20 @@ inpute.addEventListener("input", function(){
 });
 */
 
+/*
+
+let inpute = document.querySelector("input");
+
+inpute.addEventListener("input", function (event) {
+    console.log(event.data);
+});
+*/
+
+let sel = document.querySelector("select");
+let divice = document.querySelector("#divice");
+
+sel.addEventListener("change",function(details){
+   // divice.textContent ="Device Selected Done";
+   divice.textContent = `${details.target.value} Are selected`;
+console.log(details.target.value);
+});

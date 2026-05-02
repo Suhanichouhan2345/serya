@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            background-color: rgb(105, 87, 87);
+        }
+        input{
+            display: none;
+        }
+        #btn{
+            padding: 32px 22px;
+            margin: 30px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 200%;
+            font-weight: 500;
+            color: rgb(58, 27, 152);
+            background-color: rgb(213, 117, 214);
+            border-radius: 20%;
+            box-shadow: 1px 2px 4px rgb(160, 57, 57);
+        }
+        #btn:hover{
+            background-color: rgb(93, 149, 9);
+            color: rgb(54, 2, 137);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <input type="file" id="finemp">
+
+
+
+        <div id="btn"><h6>Upload File</h6></div>
+    </div>
+
+
+    <script src="file.js"></script>
+</body>
+
+</html>
