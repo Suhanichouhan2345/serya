@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f172a;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* form box */
+form {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* spacing */
+.input-group {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* inputs */
+input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* focus effect */
+input:focus {
+    border: 1px solid #38bdf8;
+    box-shadow: 0 0 5px #38bdf8;
+}
+
+/* error text */
+small {
+    color: #f87171;
+    font-size: 12px;
+    margin-top: 5px;
+    visibility: hidden;
+}
+
+/* submit button */
+input[type="submit"] {
+    background: #38bdf8;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background: #0ea5e9;
+}
+</style>
+
+</head>
+
+<body>
+
+<form autocomplete="off">
+
+    <div class="input-group">
+        <input id="email" type="email" placeholder="Email" required>
+        <small id="er">Error message</small>
+    </div>
+
+    <div class="input-group">
+        <input type="password" placeholder="Password" id="passward" required>
+        <small id="pr">Error message</small>
+    </div>
+
+    <input type="submit" value="Submit">
+
+</form>
+
+    <script src="Form_Validation.js"></script>
+</body>
+</html>
