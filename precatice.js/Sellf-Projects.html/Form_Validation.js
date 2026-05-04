@@ -21,7 +21,6 @@ form.addEventListener("submit", function(dets){
         er.style.visibility = "hidden";
     }
 
-   
     if(!PRegex){
         pr.textContent = "Weak password";
         pr.style.visibility = "visible";
@@ -29,3 +28,4 @@ form.addEventListener("submit", function(dets){
         pr.style.visibility = "hidden";
     }
 });
+
